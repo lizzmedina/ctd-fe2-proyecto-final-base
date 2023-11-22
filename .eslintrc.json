@@ -1,3 +1,4 @@
+
 {
     "env": {
         "browser": true,
@@ -10,12 +11,22 @@
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": "latest"
+        "parser":"@typescript-eslint/parser",
+        "project": "./tsconfig.json",
+        "ecmaVersion": "latest",
+        "sourceType": "module"
     },
     "plugins": [
         "@typescript-eslint",
         "react"
     ],
     "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-uses-react": "off",
+        "react/prop-types": "off",
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-misused-promises": "off"
     }
+
 }

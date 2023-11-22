@@ -17,6 +17,7 @@ const initialState: EstadoCita = {
 export const obtenerCitaAsync = createAsyncThunk(
   "cita/obtenerCita",
   async (personaje: string) => {
+    // eslint-disable-next-line no-useless-catch
     try {
       const cita = await obtenerCita(personaje);
 
