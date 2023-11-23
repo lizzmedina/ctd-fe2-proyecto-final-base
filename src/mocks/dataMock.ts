@@ -1,7 +1,7 @@
 export const quote = [
     {
         cita:"They taste like...burning.",
-        personaje:"Ralph Wiggum",
+        personaje:"liza medina",
         imagen:"https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FRalphWiggum.png?1497567511523",
         direccionPersonaje:"Left",
     }        
