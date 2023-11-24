@@ -12,7 +12,7 @@ export const SuscribeButton: FC<{ news: INews }> = ({ news }) => {
     const onClickSubscribe = () => {
         dispatch(addSubscription(news.id));
         setTimeout(() => {
-        alert("Felicitaciones, te has suscrito con exito");
+            alert("Felicitaciones, te has suscrito con exito");
         }, 1000);
     };
 
@@ -20,7 +20,7 @@ export const SuscribeButton: FC<{ news: INews }> = ({ news }) => {
         <>
         {!suscripIdList.some((id) => id === news.id) && (
             <ButtonSuscribe aria-label="suscribe-button" onClick={onClickSubscribe}>
-            Suscríbete
+                Suscríbete
             </ButtonSuscribe>
         )}
         </>
