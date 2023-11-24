@@ -19,7 +19,7 @@ export const News = () => {
       <NewsTitle>Noticias de los Simpsons</NewsTitle>
       <NewsList>
         {newList?.map((news: INews) => (
-          <CardNews key={`key_notice_${news.id}`} news={news} />
+          <CardNews key={`key_news_${news.id}`} news={news} />
         ))}
       </NewsList>
     </NewsContainer>
