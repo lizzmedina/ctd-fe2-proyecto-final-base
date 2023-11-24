@@ -8,8 +8,6 @@ type UseToggleType = {
 export const useToggle = (initialValue = false): UseToggleType => {
 
   const [isOpen, setIsOpen] = useState(initialValue);
-
   const toggle = () => setIsOpen(!isOpen);
-
   return { isOpen, toggle };
 };
