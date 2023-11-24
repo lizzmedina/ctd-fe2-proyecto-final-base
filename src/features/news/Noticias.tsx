@@ -74,19 +74,26 @@ const Noticias = () => {
       <TituloNoticias>Noticias de los Simpsons</TituloNoticias>
       <ListaNoticias>
         {noticias.map((n) => (    
+
           <TarjetaNoticia key={n.id}>
             <ImagenTarjetaNoticia src={n.imagen} />
+
             <TituloTarjetaNoticia>{n.titulo}</TituloTarjetaNoticia>
+
             <FechaTarjetaNoticia>{n.fecha}</FechaTarjetaNoticia>
+
             <DescripcionTarjetaNoticia>
               {n.descripcionCorta}
             </DescripcionTarjetaNoticia>
+
             <BotonLectura onClick={() => setModal(n)}>Ver más</BotonLectura>
+
           </TarjetaNoticia>
         ))}
         {modal ? (
           modal.esPremium ? (
             <ContenedorModal>
+
               <TarjetaModal>
                 <CloseButton onClick={() => setModal(null)}>
                   <img src={Close} alt="close-button" />
@@ -109,7 +116,9 @@ const Noticias = () => {
                     Suscríbete
                   </BotonSuscribir>
                 </CotenedorTexto>
+
               </TarjetaModal>
+              
             </ContenedorModal>
           ) : (
             <ContenedorModal>
