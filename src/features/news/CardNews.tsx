@@ -1,6 +1,6 @@
 import { FC } from "react";
 import {NewsModal} from "../news/NewsModal ";
-import { FirtsLetterOfTextInUppercase, INews } from "./fakeRest";
+import { firtsLetterOfTextInUppercase, INews } from "./fakeRest";
 import {useToggle} from "../../hooks/useToggle";
 import {  ReadButton,  CardNew,  DescriptionCardNews,  ImageCardNews,  DateCardNews,  TitleCardNews,} from "./styled";
 
@@ -12,7 +12,7 @@ export const CardNews: FC<IProps> = ({ news }) => {
 
     const { isOpen, toggle } = useToggle();
     const { tittle, description, date, image } = news;
-    const tittleUppercase = FirtsLetterOfTextInUppercase(tittle);
+    const tittleUppercase = firtsLetterOfTextInUppercase(tittle);
     const shortDescrption = description.substring(0, 100);
 
     return (

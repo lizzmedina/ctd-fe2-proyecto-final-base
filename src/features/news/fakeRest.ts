@@ -7,7 +7,7 @@ export interface INews {
   image: string;
   source?: string;
 }
-export const FirtsLetterOfTextInUppercase = (text: string) => {
+export const firtsLetterOfTextInUppercase = (text: string) => {
   return text
     .split(" ")
     .map((str) => {
@@ -16,7 +16,7 @@ export const FirtsLetterOfTextInUppercase = (text: string) => {
     .join(" ");
 };
 
-export const SimulateElapsedTime: (
+export const simulateElapsedTime: (
   decrementMiliseconds: number
 ) => number = (decrementMiliseconds) => {
   const convertMilisecToMinutes = 1 / 60000;
@@ -40,7 +40,7 @@ export const data = [
     maletero de su coche con 1,000 galones de combustible para ganar un juguete promocional para su hija Maggie.`,
     image:
       "https://i2-prod.mirror.co.uk/incoming/article25142408.ece/ALTERNATES/s615b/0_SIMPSONSJPG.jpg",
-    date: SimulateElapsedTime(300000),
+    date: simulateElapsedTime(300000),
     isPremium: false,
     source:
       "https://www.mirror.co.uk/tv/tv-news/simpsons-fans-convinced-show-predicted-25140770",
@@ -53,7 +53,7 @@ export const data = [
     en el servicio de suscripción.`,
     image:
       "https://i2-prod.mirror.co.uk/incoming/article24436503.ece/ALTERNATES/n310p/0_DISNEY.jpg",
-      date: SimulateElapsedTime(1200000),
+      date: simulateElapsedTime(1200000),
       isPremium: false,
       source:
       "https://www.mirror.co.uk/tv/tv-news/simpsons-teams-up-marvel-exciting-24435616",
@@ -68,7 +68,7 @@ export const data = [
     expresar su sorpresa ya que la serie había previsto otro gran evento.`,
     image:
       "https://i2-prod.mirror.co.uk/incoming/article24547200.ece/ALTERNATES/s615b/0_EHP_CHP_160721The-Simpsons_53631JPG.jpg",
-      date: SimulateElapsedTime(1200000),
+      date: simulateElapsedTime(1200000),
       isPremium: true,
       source:
       "https://www.mirror.co.uk/tv/tv-news/simpsons-correctly-predicts-future-again-24547074",

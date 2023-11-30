@@ -61,5 +61,4 @@ describe('testing <Cita/> ', () => {
       
         expect(inputSearch).toHaveValue('');
       });
-     
 });
